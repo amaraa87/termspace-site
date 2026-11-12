@@ -9,11 +9,12 @@ name: Deploy site
 #   gh api -X POST repos/amaraa87/termspace-site/pages -f build_type=workflow
 #   (or Settings -> Pages -> Source: GitHub Actions)
 #
-# Custom (sub)domain, e.g. termspace.example.com:
+# Custom (sub)domain, e.g. termspace.example.com (a CNAME file is ignored for a site
+# built by a workflow, so it is set on the repo):
 #   1. DNS: CNAME termspace.example.com → <owner>.github.io
-#   2. Repo Settings → Secrets and variables → Actions → Variables:
-#      add PAGES_CUSTOM_DOMAIN = termspace.example.com
-#   3. Re-run this workflow, then enable "Enforce HTTPS" in Settings → Pages.
+#   2. Settings → Pages → Custom domain, or
+#      gh api -X PUT repos/amaraa87/termspace-site/pages -f cname=termspace.example.com
+#   3. Enable "Enforce HTTPS" in Settings → Pages once the certificate is issued.
 
 on:
   push:
@@ -38,12 +39,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-
-      - name: Add CNAME when a custom domain is configured
-        if: vars.PAGES_CUSTOM_DOMAIN != ''
-        env:
-          DOMAIN: ${{ vars.PAGES_CUSTOM_DOMAIN }}
-        run: printf '%s\n' "$DOMAIN" > CNAME
 
       - uses: actions/configure-pages@v5
 
