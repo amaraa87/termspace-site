@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termspace for macOS</title>
+<meta name="description" content="Termspace is a native macOS terminal workspace for running several AI coding agents, shells and SSH sessions side by side. Terminals rendered by Ghostty.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#07080c">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Termspace for macOS">
+<meta property="og:description" content="A native macOS terminal workspace for AI coding agents, shells and SSH, side by side.">
+<meta property="og:url" content="https://amaraa87.github.io/termspace-site/">
+<meta property="og:image" content="https://amaraa87.github.io/termspace-site/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Termspace app icon and wordmark on a dark background">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Termspace for macOS">
+<meta name="twitter:description" content="A native macOS terminal workspace for AI coding agents, shells and SSH, side by side.">
+<meta name="twitter:image" content="https://amaraa87.github.io/termspace-site/assets/img/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js"}}</script>
+<script type="module" src="assets/js/hero.js"></script>
+<script src="assets/js/site.js" defer></script>
+</head>
+<!-- Release facts: change them here and in the static text marked data-r below (see README.md). -->
+<body
+  data-version="0.3.0"
+  data-size="12.4 MB"
+  data-sha="1e0068ad107c2c0d18c74096fba443affa32b86ea62bcc9d870ffe6855ee862f"
+  data-url="https://github.com/amaraa87/termspace-site/releases/download/v0.3.0/Termspace-0.3.0.dmg"
+  data-file="Termspace-0.3.0.dmg">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Termspace home">
+      <img src="assets/img/icon-96.png" width="28" height="28" alt="">
+      <span>Termspace</span>
+    </a>
+    <nav aria-label="Sections">
+      <ul>
+        <li class="hide-sm"><a href="#features">Features</a></li>
+        <li class="hide-sm"><a href="#install">Install</a></li>
+        <li class="hide-sm"><a href="#privacy">Privacy</a></li>
+        <li><a href="https://github.com/amaraa87/termspace-site/releases">Releases</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span>Version <span data-r="version">0.3.0</span> · native macOS · terminals by Ghostty</span></p>
+        <h1 id="hero-title">Every agent.<br><span class="grad">One workspace.</span></h1>
+        <p class="lede">A native macOS terminal workspace for running several AI coding agents, shells and SSH sessions side by side. Not an IDE.</p>
+        <div class="cta">
+          <a class="btn btn-primary" data-r-href="url" href="https://github.com/amaraa87/termspace-site/releases/download/v0.3.0/Termspace-0.3.0.dmg">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4l3.3 3.3V4a1 1 0 0 1 1-1ZM5 19h14a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2Z"/></svg>
+            <span class="btn-text"><span>Download for macOS</span><small>v<span data-r="version">0.3.0</span> · Apple Silicon · macOS 15+</small></span>
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/amaraa87/termspace-site/releases">All releases <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="fineprint">
+          <p><span data-r="file">Termspace-0.3.0.dmg</span> · <span data-r="size">12.4 MB</span> · Developer ID signed, notarized by Apple</p>
+          <p class="sha"><span class="sha-label">SHA-256</span> <code data-r="sha">1e0068ad107c2c0d18c74096fba443affa32b86ea62bcc9d870ffe6855ee862f</code>
+            <button type="button" class="copy" data-copy="sha" hidden>Copy</button><span class="copied" role="status" aria-live="polite"></span></p>
+        </div>
+      </div>
+      <div class="hero-stage" aria-hidden="true">
+        <div class="stage-fallback"><img src="assets/img/apple-touch-icon.png" width="180" height="180" alt=""></div>
+        <canvas id="hero-canvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section class="product" aria-labelledby="product-title">
+    <div class="wrap">
+      <h2 id="product-title" class="sr-only">What it looks like</h2>
+      <div class="window">
+        <div class="titlebar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><span class="title">demo</span></div>
+        <div class="win-body">
+          <aside class="sidebar" aria-label="Workspaces (illustration)">
+            <p class="side-h">Workspaces</p>
+            <ul>
+              <li class="on"><span>demo</span><span class="hand" title="needs you">✋</span></li>
+              <li><span>api</span><span class="spin" aria-label="working"></span></li>
+              <li><span>notes</span></li>
+            </ul>
+            <p class="side-foot">1 working</p>
+          </aside>
+          <div class="term">
+            <div class="tabs" aria-hidden="true"><span class="tab on">claude</span><span class="tab">zsh</span><span class="tab waiting">server</span><span class="chip">demo · main</span></div>
+            <pre class="tty" aria-label="Example terminal session"><span class="p">~/projects/demo %</span> claude
+<span class="a">✻</span> <b>Claude Code</b>
+
+<span class="u">&gt; add a retry to the fetch helper and test it</span>
+
+<span class="a">⏺</span> Read <span class="m">src/fetch.ts</span>
+<span class="a">⏺</span> Update <span class="m">src/fetch.ts</span>  <span class="g">+14</span> <span class="r">−3</span>
+<span class="a">⏺</span> Bash <span class="m">npm test</span>
+  <span class="g">✓</span> 12 passed <span class="m">(1.8s)</span>
+
+<span class="a">⏺</span> fetchJson now retries twice with backoff
+  on network errors. Tests pass.
+
+<span class="u">&gt;</span> <span class="cursor"></span></pre>
+            <div class="tabs split" aria-hidden="true"><span class="tab on">zsh</span><span class="tab">logs</span></div>
+            <pre class="tty tty2" aria-label="Example second pane"><span class="p">~/projects/demo %</span> npm run dev
+<span class="m">&gt; demo@1.0.0 dev</span>
+<span class="g">ready</span> on http://localhost:3000
+<span class="m">GET /api/items 200 in 41ms</span>
+<span class="m">GET /api/items 200 in 12ms</span></pre>
+            <div class="statusbar" aria-hidden="true"><span>Opus</span><span>high</span><span class="ctx"><i></i>37%</span><span>5h 26%</span><span>$0.84</span></div>
+          </div>
+          <div class="insp">
+            <input type="radio" name="insp" id="t-session" checked>
+            <input type="radio" name="insp" id="t-git">
+            <input type="radio" name="insp" id="t-tools">
+            <div class="seg" role="group" aria-label="Inspector panel">
+              <label for="t-session">Session</label>
+              <label for="t-git">Git</label>
+              <label for="t-tools">Tools</label>
+            </div>
+            <div class="shots">
+              <img class="shot shot-session" src="assets/img/inspector-session.webp" width="395" height="832" loading="lazy" alt="Session panel: Claude Code session following focus, context 37 percent, 5-hour and 7-day limits, a step list with two of four complete, two subagents, changes and integrations.">
+              <img class="shot shot-git" src="assets/img/inspector-git.webp" width="569" height="832" loading="lazy" alt="Git panel: branch, one staged and four changed files with line counts, and a read-only diff of one file.">
+              <img class="shot shot-tools" src="assets/img/inspector-tools.webp" width="459" height="832" loading="lazy" alt="Tools panel: skills used with attributed tokens, two loaded plugins and three connected MCP servers.">
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="caption">The terminal side is an illustration; the inspector pictures are from the app with sample data.</p>
+    </div>
+  </section>
+
+  <section id="features" class="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <p class="kicker">Features</p>
+      <h2 id="features-title">Built for running agents in parallel.</h2>
+      <div class="bento">
+        <article class="card span2">
+          <h3>Workspaces of panes and tabs</h3>
+          <p>Split right <kbd>⌘D</kbd> or down <kbd>⇧⌘D</kbd>. Drag a tab onto another pane: in the middle it joins the tabs, near an edge it splits that side. Drag the line between panes to resize.</p>
+          <div class="panes" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="card">
+          <h3>Layouts that come back</h3>
+          <p>Workspaces, panes, tab order and names return after a relaunch. Each shell restarts in its last folder. Nothing is ever run again.</p>
+        </article>
+        <article class="card">
+          <h3>Rendered by Ghostty</h3>
+          <p>Every terminal is drawn by Ghostty's Metal renderer through its embedding library, with Ghostty's themes to pick from.</p>
+        </article>
+        <article class="card span2 tall">
+          <h3>Claude Code inspector</h3>
+          <p>A column beside the terminals that follows the focused tab. It finds the session through Claude Code's own session files and reads them read-only; it never writes under <code>~/.claude</code>. The session panels need no setup; the plan's 5-hour and weekly windows and cost need the bundled plugin's status-line step.</p>
+          <ul class="ticks">
+            <li><b>Session</b> state, model, context, plan 5-hour and weekly windows, steps, subagents</li>
+            <li><b>Git</b> branch, staged, changed and untracked files with line counts, and a read-only diff you step through change by change</li>
+            <li><b>Tools</b> skills, plugins and MCP servers</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Knows when an agent needs you</h3>
+          <p>A mark on the workspace, a count on the Dock icon, a toast, and a macOS notification when the window is out of sight. From bells and OSC 9 / 777; OSC 9;4 progress shows a spinner. Nothing is guessed from output.</p>
+        </article>
+        <article class="card">
+          <h3>Status bar</h3>
+          <p>The focused session in the order of Claude Code's own status line: model and effort, context, the 5-hour window and cost.</p>
+        </article>
+        <article class="card">
+          <h3>Remote tabs over ssh</h3>
+          <p>A tab that runs the system <code>ssh</code>. Keys, ports and jump hosts stay with ssh and your <code>~/.ssh/config</code>; Termspace keeps only the host name.</p>
+        </article>
+        <article class="card">
+          <h3>Palette and file viewer</h3>
+          <p><kbd>⌘/</kbd> searches workspaces, terminals and every menu command. <kbd>⇧⌘O</kbd> opens a Markdown or text file beside the terminals.</p>
+        </article>
+        <article class="card">
+          <h3>Yours to change</h3>
+          <p>Every shortcut can be rebound. App themes Frost and Violet, each dark and light, plus any terminal theme Ghostty ships.</p>
+          <div class="swatches" aria-hidden="true"><i style="--c:#6EA8FF"></i><i style="--c:#65D9F4"></i><i style="--c:#A78BFA"></i><i style="--c:#C4B5FD"></i></div>
+        </article>
+        <article class="card">
+          <h3>Optional Claude Code plugin, bundled</h3>
+          <p>With it, a tab running Claude Code reports that it is working, needs you or has stopped, and the status line data (model, context use, cost) reaches Termspace for that tab. Shell → Install Claude Code Integration… copies it and shows the two steps to switch it on. Termspace never edits anything under <code>~/.claude</code> itself.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="keys" aria-labelledby="keys-title">
+    <div class="wrap">
+      <h2 id="keys-title" class="kicker">Shortcuts</h2>
+      <ul class="keylist">
+        <li><kbd>⌘T</kbd> New tab</li>
+        <li><kbd>⌘D</kbd> Split right</li>
+        <li><kbd>⇧⌘D</kbd> Split down</li>
+        <li><kbd>⇧⌘↩</kbd> Zoom pane</li>
+        <li><kbd>⇧⌘K</kbd> Remote connection</li>
+        <li><kbd>⌘/</kbd> Command palette</li>
+        <li><kbd>⇧⌘O</kbd> Open file beside</li>
+        <li><kbd>⌥⌘B</kbd> Inspector</li>
+      </ul>
+      <p class="muted small">Defaults. Change any of them in Settings → Shortcuts.</p>
+    </div>
+  </section>
+
+  <section id="install" class="install" aria-labelledby="install-title">
+    <div class="wrap two">
+      <div>
+        <p class="kicker">Install</p>
+        <h2 id="install-title">Drag, drop, done.</h2>
+        <ol class="steps">
+          <li><a data-r-href="url" href="https://github.com/amaraa87/termspace-site/releases/download/v0.3.0/Termspace-0.3.0.dmg">Download <span data-r="file">Termspace-0.3.0.dmg</span></a> and open it.</li>
+          <li>Drag Termspace to Applications, then open it.</li>
+          <li>The first time a shell touches Desktop, Documents or Downloads, macOS asks whether Termspace may access it. That shell waits until you answer.</li>
+        </ol>
+        <p class="muted">To update, quit Termspace and replace the whole app with the new one.</p>
+      </div>
+      <div>
+        <p class="kicker">Requirements</p>
+        <dl class="reqs">
+          <div><dt>Mac</dt><dd>Apple Silicon (arm64)</dd></div>
+          <div><dt>macOS</dt><dd>15 or later</dd></div>
+          <div><dt>Signed</dt><dd>Developer ID, notarized by Apple</dd></div>
+          <div><dt>Inspector</dt><dd>Claude Code, for the session panels (optional)</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy" class="privacy" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <div class="card privacy-card">
+        <h2 id="privacy-title">Private by design</h2>
+        <p>No account. No telemetry is sent anywhere. To show a session, Termspace reads Claude Code's session files on your Mac, read-only. Settings and layouts stay in your Library folder.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p><img src="assets/img/icon-96.png" width="20" height="20" alt=""> Termspace <span data-r="version">0.3.0</span></p>
+    <p>Terminals rendered by <a href="https://ghostty.org">Ghostty</a> (MIT).</p>
+    <p><a href="https://github.com/amaraa87/termspace-site/releases">Releases</a></p>
+  </div>
+</footer>
+</body>
+</html>

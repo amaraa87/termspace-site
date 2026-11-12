@@ -1,0 +1,55 @@
+name: Deploy site
+
+# Publishes this repo (the landing page for the Termspace macOS app) to
+# GitHub Pages on every push to main. The DMG itself is a release asset,
+# not part of the site.
+# Served at: https://<owner>.github.io/termspace-site/
+#
+# One-time setup before the first run (the workflow token cannot create the Pages site):
+#   gh api -X POST repos/amaraa87/termspace-site/pages -f build_type=workflow
+#   (or Settings -> Pages -> Source: GitHub Actions)
+#
+# Custom (sub)domain, e.g. termspace.example.com:
+#   1. DNS: CNAME termspace.example.com → <owner>.github.io
+#   2. Repo Settings → Secrets and variables → Actions → Variables:
+#      add PAGES_CUSTOM_DOMAIN = termspace.example.com
+#   3. Re-run this workflow, then enable "Enforce HTTPS" in Settings → Pages.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add CNAME when a custom domain is configured
+        if: vars.PAGES_CUSTOM_DOMAIN != ''
+        env:
+          DOMAIN: ${{ vars.PAGES_CUSTOM_DOMAIN }}
+        run: printf '%s\n' "$DOMAIN" > CNAME
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
