@@ -161,7 +161,7 @@
           <p>Every terminal is drawn by Ghostty's Metal renderer through its embedding library, with Ghostty's themes to pick from.</p>
         </article>
         <article class="card span2 tall">
-          <h3>Claude Code inspector</h3>
+          <h3>Agent inspector</h3>
           <p>A column beside the terminals that follows the focused tab, for Claude Code and Codex CLI. It finds the session through the tool's own session files and reads them read-only; it never writes under <code>~/.claude</code> or <code>~/.codex</code>. Drag its edge to resize it. The session panels need no setup; for Claude Code, the plan's 5-hour and weekly windows and cost need the bundled plugin's status-line step.</p>
           <ul class="ticks">
             <li><b>Session</b> state, model, context split as on Claude's Usage screen, the plan's windows with a heads-up when the pace would use one up before its reset, steps, subagents</li>
@@ -233,7 +233,7 @@
           <div><dt>Mac</dt><dd>Apple Silicon (arm64)</dd></div>
           <div><dt>macOS</dt><dd>15 or later</dd></div>
           <div><dt>Signed</dt><dd>Developer ID, notarized by Apple</dd></div>
-          <div><dt>Inspector</dt><dd>Claude Code, for the session panels (optional)</dd></div>
+          <div><dt>Inspector</dt><dd>Claude Code or Codex CLI, for the session panels (optional)</dd></div>
         </dl>
       </div>
     </div>
@@ -243,7 +243,7 @@
     <div class="wrap">
       <div class="card privacy-card">
         <h2 id="privacy-title">Private by design</h2>
-        <p>No account. No telemetry is sent anywhere. To show a session, Termspace reads Claude Code's and Codex's session files on your Mac, read-only. Optional and off by default: local usage telemetry asks Claude Code to send its token counters to Termspace on this Mac (127.0.0.1). Settings and layouts stay in your Library folder.</p>
+        <p>No account. Termspace sends nothing off your Mac. To show a session, it reads Claude Code's and Codex's session files on your Mac, read-only. Optional and off by default: local usage telemetry sets variables in new terminals that ask Claude Code to send its token counters to Termspace on this Mac (127.0.0.1); it changes no file under <code>~/.claude</code>. Settings and layouts stay in your Library folder.</p>
       </div>
     </div>
   </section>
