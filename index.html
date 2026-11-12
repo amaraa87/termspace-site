@@ -31,11 +31,11 @@
 </head>
 <!-- Release facts: change them here and in the static text marked data-r below (see README.md). -->
 <body
-  data-version="0.3.0"
-  data-size="12.4 MB"
-  data-sha="1e0068ad107c2c0d18c74096fba443affa32b86ea62bcc9d870ffe6855ee862f"
-  data-url="https://github.com/amaraa87/termspace-site/releases/download/v0.3.0/Termspace-0.3.0.dmg"
-  data-file="Termspace-0.3.0.dmg">
+  data-version="0.4.0"
+  data-size="13.0 MB"
+  data-sha="63711267492e6fef82b3958132c9a4487736250e09304612c5ae74848f8b0b26"
+  data-url="https://github.com/amaraa87/termspace-site/releases/download/v0.4.0/Termspace-0.4.0.dmg"
+  data-file="Termspace-0.4.0.dmg">
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="nav">
@@ -59,19 +59,19 @@
   <section class="hero" id="top" aria-labelledby="hero-title">
     <div class="wrap hero-in">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span>Version <span data-r="version">0.3.0</span> · native macOS · terminals by Ghostty</span></p>
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span>Version <span data-r="version">0.4.0</span> · native macOS · terminals by Ghostty</span></p>
         <h1 id="hero-title">Every agent.<br><span class="grad">One workspace.</span></h1>
         <p class="lede">A native macOS terminal workspace for running several AI coding agents, shells and SSH sessions side by side. Not an IDE.</p>
         <div class="cta">
-          <a class="btn btn-primary" data-r-href="url" href="https://github.com/amaraa87/termspace-site/releases/download/v0.3.0/Termspace-0.3.0.dmg">
+          <a class="btn btn-primary" data-r-href="url" href="https://github.com/amaraa87/termspace-site/releases/download/v0.4.0/Termspace-0.4.0.dmg">
             <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4l3.3 3.3V4a1 1 0 0 1 1-1ZM5 19h14a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2Z"/></svg>
-            <span class="btn-text"><span>Download for macOS</span><small>v<span data-r="version">0.3.0</span> · Apple Silicon · macOS 15+</small></span>
+            <span class="btn-text"><span>Download for macOS</span><small>v<span data-r="version">0.4.0</span> · Apple Silicon · macOS 15+</small></span>
           </a>
           <a class="btn btn-ghost" href="https://github.com/amaraa87/termspace-site/releases">All releases <span aria-hidden="true">→</span></a>
         </div>
         <div class="fineprint">
-          <p><span data-r="file">Termspace-0.3.0.dmg</span> · <span data-r="size">12.4 MB</span> · Developer ID signed, notarized by Apple</p>
-          <p class="sha"><span class="sha-label">SHA-256</span> <code data-r="sha">1e0068ad107c2c0d18c74096fba443affa32b86ea62bcc9d870ffe6855ee862f</code>
+          <p><span data-r="file">Termspace-0.4.0.dmg</span> · <span data-r="size">13.0 MB</span> · Developer ID signed, notarized by Apple</p>
+          <p class="sha"><span class="sha-label">SHA-256</span> <code data-r="sha">63711267492e6fef82b3958132c9a4487736250e09304612c5ae74848f8b0b26</code>
             <button type="button" class="copy" data-copy="sha" hidden>Copy</button><span class="copied" role="status" aria-live="polite"></span></p>
         </div>
       </div>
@@ -162,11 +162,11 @@
         </article>
         <article class="card span2 tall">
           <h3>Claude Code inspector</h3>
-          <p>A column beside the terminals that follows the focused tab. It finds the session through Claude Code's own session files and reads them read-only; it never writes under <code>~/.claude</code>. The session panels need no setup; the plan's 5-hour and weekly windows and cost need the bundled plugin's status-line step.</p>
+          <p>A column beside the terminals that follows the focused tab, for Claude Code and Codex CLI. It finds the session through the tool's own session files and reads them read-only; it never writes under <code>~/.claude</code> or <code>~/.codex</code>. Drag its edge to resize it. The session panels need no setup; for Claude Code, the plan's 5-hour and weekly windows and cost need the bundled plugin's status-line step.</p>
           <ul class="ticks">
-            <li><b>Session</b> state, model, context, plan 5-hour and weekly windows, steps, subagents</li>
-            <li><b>Git</b> branch, staged, changed and untracked files with line counts, and a read-only diff you step through change by change</li>
-            <li><b>Tools</b> skills, plugins and MCP servers</li>
+            <li><b>Session</b> state, model, context split as on Claude's Usage screen, the plan's windows with a heads-up when the pace would use one up before its reset, steps, subagents</li>
+            <li><b>Git</b> branch, staged, changed and untracked files with line counts, and a read-only diff you step through change by change, side by side when the column is wide</li>
+            <li><b>Tools</b> skills, plugins and MCP servers, with the tokens of the replies made for each server</li>
           </ul>
         </article>
         <article class="card">
@@ -179,7 +179,7 @@
         </article>
         <article class="card">
           <h3>Remote tabs over ssh</h3>
-          <p>A tab that runs the system <code>ssh</code>. Keys, ports and jump hosts stay with ssh and your <code>~/.ssh/config</code>; Termspace keeps only the host name.</p>
+          <p>A tab that runs the system <code>ssh</code>. Keys, ports and jump hosts stay with ssh and your <code>~/.ssh/config</code>; Termspace keeps only the host name. With the plugin on the server, Claude Code's model, context, cost and plan windows there show for that tab.</p>
         </article>
         <article class="card">
           <h3>Palette and file viewer</h3>
@@ -221,7 +221,7 @@
         <p class="kicker">Install</p>
         <h2 id="install-title">Drag, drop, done.</h2>
         <ol class="steps">
-          <li><a data-r-href="url" href="https://github.com/amaraa87/termspace-site/releases/download/v0.3.0/Termspace-0.3.0.dmg">Download <span data-r="file">Termspace-0.3.0.dmg</span></a> and open it.</li>
+          <li><a data-r-href="url" href="https://github.com/amaraa87/termspace-site/releases/download/v0.4.0/Termspace-0.4.0.dmg">Download <span data-r="file">Termspace-0.4.0.dmg</span></a> and open it.</li>
           <li>Drag Termspace to Applications, then open it.</li>
           <li>The first time a shell touches Desktop, Documents or Downloads, macOS asks whether Termspace may access it. That shell waits until you answer.</li>
         </ol>
@@ -243,7 +243,7 @@
     <div class="wrap">
       <div class="card privacy-card">
         <h2 id="privacy-title">Private by design</h2>
-        <p>No account. No telemetry is sent anywhere. To show a session, Termspace reads Claude Code's session files on your Mac, read-only. Settings and layouts stay in your Library folder.</p>
+        <p>No account. No telemetry is sent anywhere. To show a session, Termspace reads Claude Code's and Codex's session files on your Mac, read-only. Optional and off by default: local usage telemetry asks Claude Code to send its token counters to Termspace on this Mac (127.0.0.1). Settings and layouts stay in your Library folder.</p>
       </div>
     </div>
   </section>
@@ -251,7 +251,7 @@
 
 <footer class="foot">
   <div class="wrap foot-in">
-    <p><img src="assets/img/icon-96.png" width="20" height="20" alt=""> Termspace <span data-r="version">0.3.0</span></p>
+    <p><img src="assets/img/icon-96.png" width="20" height="20" alt=""> Termspace <span data-r="version">0.4.0</span></p>
     <p>Terminals rendered by <a href="https://ghostty.org">Ghostty</a> (MIT).</p>
     <p><a href="https://github.com/amaraa87/termspace-site/releases">Releases</a></p>
   </div>
