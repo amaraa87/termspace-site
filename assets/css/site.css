@@ -118,7 +118,7 @@ h1 { font-size: clamp(44px, 6.4vw, 80px); font-weight: 800; letter-spacing: -0.0
 .title { position: absolute; left: 50%; transform: translateX(-50%); font-size: 13px; color: #9aaec7; }
 .win-body { display: grid; grid-template-columns: 1fr; }
 @media (min-width: 1000px) { .win-body { grid-template-columns: 170px minmax(0, 1fr) 420px; } }
-@media (min-width: 720px) and (max-width: 999px) { .win-body { grid-template-columns: minmax(0, 1fr) 340px; } }
+@media (min-width: 720px) and (max-width: 999.98px) { .win-body { grid-template-columns: minmax(0, 1fr) 340px; } }
 .sidebar { display: none; background: #0e1828; border-right: 1px solid #26364d; padding: 14px 10px; font-size: 13px; position: relative; }
 @media (min-width: 1000px) { .sidebar { display: block; } }
 .side-h { color: #9aaec7; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; padding: 0 8px 8px; }
@@ -170,7 +170,7 @@ h1 { font-size: clamp(44px, 6.4vw, 80px); font-weight: 800; letter-spacing: -0.0
 @media (min-width: 720px) { .bento { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1000px) { .bento { grid-template-columns: repeat(3, 1fr); } .span2 { grid-column: span 2; }  }
 /* .mid2: a card that fills the last row of the 2-column grid only */
-@media (min-width: 720px) and (max-width: 999px) { .span2, .mid2 { grid-column: span 2; } }
+@media (min-width: 720px) and (max-width: 999.98px) { .span2, .mid2 { grid-column: span 2; } }
 .card { position: relative; padding: 24px; border: 1px solid var(--line); border-radius: var(--r); background: linear-gradient(180deg, rgba(255,255,255,.025), transparent 40%), var(--card); overflow: hidden; transition: border-color .25s ease; }
 .card:hover { border-color: var(--line2); }
 .card h3 { margin-bottom: 10px; }
