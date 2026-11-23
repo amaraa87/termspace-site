@@ -13,14 +13,14 @@
 <meta property="og:title" content="Termspace for macOS">
 <meta property="og:description" content="A native macOS terminal workspace for AI coding agents, shells and SSH, side by side.">
 <meta property="og:url" content="https://amaraa87.github.io/termspace-site/">
-<meta property="og:image" content="https://amaraa87.github.io/termspace-site/assets/img/og.png?v=0.6.0">
+<meta property="og:image" content="https://amaraa87.github.io/termspace-site/assets/img/og.png?v=0.6.1">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Termspace app icon and wordmark on a dark background">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Termspace for macOS">
 <meta name="twitter:description" content="A native macOS terminal workspace for AI coding agents, shells and SSH, side by side.">
-<meta name="twitter:image" content="https://amaraa87.github.io/termspace-site/assets/img/og.png?v=0.6.0">
+<meta name="twitter:image" content="https://amaraa87.github.io/termspace-site/assets/img/og.png?v=0.6.1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap">
@@ -31,11 +31,11 @@
 </head>
 <!-- Release facts: change them here and in the static text marked data-r below (see README.md). -->
 <body
-  data-version="0.6.0"
-  data-size="14.1 MB"
-  data-sha="a0181158d453edd0387a768bd4c604f09ce151678fb28fc8de25d4736c4bf0fd"
-  data-url="https://github.com/amaraa87/termspace-site/releases/download/v0.6.0/Termspace-0.6.0.dmg"
-  data-file="Termspace-0.6.0.dmg">
+  data-version="0.6.1"
+  data-size="14.2 MB"
+  data-sha="8f30903012380511fd4fba1cb3476da898dfef0dfa553a36609c582839806e5f"
+  data-url="https://github.com/amaraa87/termspace-site/releases/download/v0.6.1/Termspace-0.6.1.dmg"
+  data-file="Termspace-0.6.1.dmg">
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="nav">
@@ -59,19 +59,19 @@
   <section class="hero" id="top" aria-labelledby="hero-title">
     <div class="wrap hero-in">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span>Version <span data-r="version">0.6.0</span> · native macOS · terminals by Ghostty</span></p>
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span>Version <span data-r="version">0.6.1</span> · native macOS · terminals by Ghostty</span></p>
         <h1 id="hero-title">Every agent.<br><span class="grad">One workspace.</span></h1>
         <p class="lede">A native macOS terminal workspace for running several AI coding agents, shells and SSH sessions side by side. Not an IDE.</p>
         <div class="cta">
-          <a class="btn btn-primary" data-r-href="url" href="https://github.com/amaraa87/termspace-site/releases/download/v0.6.0/Termspace-0.6.0.dmg">
+          <a class="btn btn-primary" data-r-href="url" href="https://github.com/amaraa87/termspace-site/releases/download/v0.6.1/Termspace-0.6.1.dmg">
             <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.4l3.3 3.3V4a1 1 0 0 1 1-1ZM5 19h14a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2Z"/></svg>
-            <span class="btn-text"><span>Download for macOS</span><small>v<span data-r="version">0.6.0</span> · Apple Silicon · macOS 15+</small></span>
+            <span class="btn-text"><span>Download for macOS</span><small>v<span data-r="version">0.6.1</span> · Apple Silicon · macOS 15+</small></span>
           </a>
           <a class="btn btn-ghost" href="https://github.com/amaraa87/termspace-site/releases">All releases <span aria-hidden="true">→</span></a>
         </div>
         <div class="fineprint">
-          <p><span data-r="file">Termspace-0.6.0.dmg</span> · <span data-r="size">14.1 MB</span> · Developer ID signed, notarized by Apple</p>
-          <p class="sha"><span class="sha-label">SHA-256</span> <code data-r="sha">a0181158d453edd0387a768bd4c604f09ce151678fb28fc8de25d4736c4bf0fd</code>
+          <p><span data-r="file">Termspace-0.6.1.dmg</span> · <span data-r="size">14.2 MB</span> · Developer ID signed, notarized by Apple</p>
+          <p class="sha"><span class="sha-label">SHA-256</span> <code data-r="sha">8f30903012380511fd4fba1cb3476da898dfef0dfa553a36609c582839806e5f</code>
             <button type="button" class="copy" data-copy="sha" hidden>Copy</button><span class="copied" role="status" aria-live="polite"></span></p>
         </div>
       </div>
@@ -212,6 +212,10 @@
           <p>With it, a tab running Claude Code reports that it is working, needs you or has stopped, and the status line data (model, context use, cost) reaches Termspace for that tab. Shell → Install Claude Code Integration… copies it and shows the two steps to switch it on. Termspace never edits anything under <code>~/.claude</code> itself.</p>
         </article>
         <article class="card full">
+          <h3>New Task: a git worktree per task</h3>
+          <p>Workspace → New Task… makes a branch and a worktree for it beside the repository, in <code>&lt;repo&gt;-wt/&lt;task&gt;</code>, and opens a workspace there with <code>claude</code> or <code>codex</code> typed at its prompt, never run. The sheet shows the exact <code>git</code> command; hooks stay off and nothing goes over the network. Remove Task… says first what would be lost (uncommitted files, commits on no other branch, ignored files), then removes the worktree without <code>--force</code> and the branch only if it is merged.</p>
+        </article>
+        <article class="card full">
           <h3>Kits: plugin and skill sets per workspace</h3>
           <p>Settings → Kits lists the Claude Code plugins on your Mac by what each adds: skills, subagents, hooks, tool servers. A set switches plugins, skills, commands and workflows on or off for Claude; a workspace picks its set in the sidebar, and new workspaces start with it. Workspace → Start Claude Here types <code>claude --settings …</code> with the set in a new tab, never run. The set's files stay in Termspace's own folder; nothing under <code>~/.claude</code> changes.</p>
         </article>
@@ -244,7 +248,7 @@
         <p class="kicker">Install</p>
         <h2 id="install-title">Drag, drop, done.</h2>
         <ol class="steps">
-          <li><a data-r-href="url" href="https://github.com/amaraa87/termspace-site/releases/download/v0.6.0/Termspace-0.6.0.dmg">Download <span data-r="file">Termspace-0.6.0.dmg</span></a> and open it.</li>
+          <li><a data-r-href="url" href="https://github.com/amaraa87/termspace-site/releases/download/v0.6.1/Termspace-0.6.1.dmg">Download <span data-r="file">Termspace-0.6.1.dmg</span></a> and open it.</li>
           <li>Drag Termspace to Applications, then open it.</li>
           <li>The first time a shell touches Desktop, Documents or Downloads, macOS asks whether Termspace may access it. That shell waits until you answer.</li>
         </ol>
@@ -274,7 +278,7 @@
 
 <footer class="foot">
   <div class="wrap foot-in">
-    <p><img src="assets/img/icon-96.png" width="20" height="20" alt=""> Termspace <span data-r="version">0.6.0</span></p>
+    <p><img src="assets/img/icon-96.png" width="20" height="20" alt=""> Termspace <span data-r="version">0.6.1</span></p>
     <p>Terminals rendered by <a href="https://ghostty.org">Ghostty</a> (MIT).</p>
     <p><a href="https://github.com/amaraa87/termspace-site/releases">Releases</a></p>
   </div>
